@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-blue-950 to-black text-white min-h-screen flex items-center justify-center px-4">
+
+  <div class="bg-white/5 border border-white/10 backdrop-blur-lg rounded-2xl shadow-xl p-10 max-w-xl w-full text-center text-white">
+    <h1 class="text-4xl font-bold mb-4">🔍 Heart Risk Report</h1>
+    
+    <p class="text-lg text-gray-300 mb-2">Name: <span class="text-blue-400 font-medium">{{ results.name }}</span></p>
+    <p class="text-lg text-gray-300 mb-4">Predicted Risk Score: 
+      <span class="text-2xl font-semibold text-yellow-300">{{ results.risk }}</span>
+    </p>
+
+    <div class="text-2xl font-bold mb-6">
+      {{ results.level }}
+    </div>
+
+    <a href="/" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full transition">
+      🔁 Predict Again
+    </a>
+  </div>
+
+</body>
+</html>
